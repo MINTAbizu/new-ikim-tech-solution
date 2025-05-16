@@ -28,20 +28,22 @@ function Home() {
             <div className="col-md-12" data-aos="fade-up" data-aos-delay="400">
               <div className="row justify-content-center mb-4">
                 <div className="col-md-8 text-center typedwords">
-                  <h1>We Love To Build <span className="typed-words" ref={el} /></h1>
+                  <h1 className='commonword'>We Love To Build <span className="typed-words" ref={el} /></h1>
                  
                 </div>
               </div>
             </div>
+             <div className="homebutton">
+                    <a data-fancybox className="btn btn-primary btn-md">Read More</a>
+                    <a data-fancybox className="btn btn-primary btn-md">Get Started Today</a>
+                  </div>
           </div>
+          
         </div>
         
       </div>
 
-       <div className="homebutton">
-                    <a data-fancybox className="btn btn-primary btn-md">Read More</a>
-                    <a data-fancybox className="btn btn-primary btn-md">Get Started Today</a>
-                  </div>
+      
       
     </div>
   )

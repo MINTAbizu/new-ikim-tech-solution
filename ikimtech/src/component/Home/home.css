@@ -6,15 +6,18 @@
     display: flex;
     align-items: center; /* Center content vertically */
     justify-content: center; /* Center content horizontally */
-    color: white; /* Text color */
+    color: #0056b3; 
     background-image: url('../image/home/hero_1.jpg'); /* Replace with your background image */
     background-size: cover; /* Cover the area */
     background-position: center; /* Center the background */
     text-align: center; /* Center text */
+    margin-bottom: 50px;
 }
 
 .typedwords {
     margin: 0; /* Reset margin */
+
+    font-size: 38px;
 }
 
 .homebutton {
@@ -55,11 +58,13 @@
     .homebutton {
         flex-direction: column; /* Stack buttons vertically on small screens */
         width: 100%; /* Full width for buttons */
+        margin-top: 90px;
     }
 
     .btn {
         width: 90%; /* Make buttons responsive */
         font-size: 14px; /* Smaller font size */
+        margin-top: 40px;
     }
 }
 
@@ -74,7 +79,7 @@
 }
 
 .homebutton {
-    margin-top: 20px; /* Spacing above buttons */
+    margin-top: -50px; /* Spacing above buttons */
     display: flex;
     justify-content: center; /* Center buttons */
     gap: 10px; /* Space between buttons */
