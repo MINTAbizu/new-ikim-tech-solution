@@ -1,0 +1,114 @@
+/* Home Component Styles */
+
+.site-blocks-cover {
+    position: relative; /* Positioning adjustments */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: white; /* Text color */
+    background-image: url('../image/home/hero_1.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the area */
+    background-position: center; /* Center the background */
+    text-align: center; /* Center text */
+}
+
+.typedwords {
+    margin: 0; /* Reset margin */
+}
+
+.homebutton {
+    margin-top: 20px; /* Spacing above buttons */
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow wrapping */
+}
+
+.btn {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .site-blocks-cover {
+        height: 80vh; /* Adjust height for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .site-blocks-cover {
+        height: 60vh; /* Adjust height for smaller screens */
+    }
+
+    .homebutton {
+        flex-direction: column; /* Stack buttons vertically on small screens */
+        width: 100%; /* Full width for buttons */
+    }
+
+    .btn {
+        width: 90%; /* Make buttons responsive */
+        font-size: 14px; /* Smaller font size */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 12px; /* Further reduce font size on very small screens */
+    }
+
+    .typedwords h1 {
+        font-size: 1.5rem; /* Adjust heading size for small devices */
+    }
+}
+
+.homebutton {
+    margin-top: 20px; /* Spacing above buttons */
+    display: flex;
+    justify-content: center; /* Center buttons */
+    gap: 10px; /* Space between buttons */
+    flex-wrap: wrap; /* Allow buttons to wrap on smaller screens */
+}
+
+.btn {
+    padding: 10px 20px; /* Button padding */
+    font-size: 16px; /* Button font size */
+    color: white; /* Button text color */
+    background-color: #007bff; /* Button background color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+    flex: 1 1 auto; /* Allow buttons to grow and shrink */
+    min-width: 150px; /* Minimum button width */
+}
+
+.btn:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .btn {
+        font-size: 14px; /* Smaller font size on smaller screens */
+        padding: 8px 16px; /* Adjust padding for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn {
+        font-size: 12px; /* Further reduce font size on very small screens */
+        padding: 6px 12px; /* Adjust padding for very small screens */
+    }
+}
