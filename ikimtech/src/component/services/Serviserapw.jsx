@@ -2,6 +2,7 @@ import React from 'react'
 import Services from './Services'
 import logo from '../image/icon/logo.jpg'
 import '../services/servise.css'
+import Project from '../project/Project'
 
 function Serviserapw() {
   return (
@@ -16,6 +17,17 @@ function Serviserapw() {
    <Services logo={logo} title={' Web devlopment  '} descrption={'text'}/>
    <Services logo={logo} title={' Web devlopment  '} descrption={'text'}/>
       </div>
+
+     <div className="projectwrap">
+       <Project image={logo} title={'web devlopment'}/>
+       <Project image={logo} title={'web devlopment'}/>
+        <Project image={logo} title={'web devlopment'}/>
+     </div>
+      <div className="projectwrap">
+       <Project image={logo} title={'web devlopment'}/>
+       <Project image={logo} title={'web devlopment'}/>
+        <Project image={logo} title={'web devlopment'}/>
+     </div>
     </div>
   )
 }

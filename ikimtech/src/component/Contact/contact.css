@@ -1,0 +1,56 @@
+/* Contact Form Styles */
+.contactform {
+  text-align: center;
+  max-width: 600px; /* Use max-width for responsiveness */
+  margin: 0 auto; /* Center the form */
+  background-color: white;
+  padding: 20px; /* Add padding for inner spacing */
+  border: 10px solid hsl(0, 24%, 93%);
+  border-radius: 10px;
+}
+
+.formgroup {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping of form groups */
+  justify-content: space-between;
+  gap: 14px;
+}
+
+input,
+textarea {
+  width: 100%; /* Full width for input and textarea */
+  max-width: 300px; /* Limit max width */
+  height: 40px; /* Increased height for better usability */
+  margin: 10px 0; /* Adjust margin */
+  border: 3px solid black;
+  border-radius: 5px;
+  padding: 5px; /* Add padding inside inputs */
+}
+
+textarea {
+  height: 100px; /* Set a fixed height for the textarea */
+}
+
+.btn {
+  width: 100%; /* Full width for the button */
+  max-width: 300px; /* Limit max width */
+  margin: 20px 0; /* Adjust margin */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .contactform {
+    width: 90%; /* Use more width on smaller screens */
+    margin: 0 auto; /* Center the form */
+  }
+
+  .formgroup {
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center inputs */
+  }
+
+  input,
+  textarea {
+    max-width: 100%; /* Allow full width on small screens */
+  }
+}

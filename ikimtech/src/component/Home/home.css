@@ -18,6 +18,9 @@
     margin: 0; /* Reset margin */
 
     font-size: 38px;
+    text-align: center;
+    margin-top: 70px;
+    margin-left: 120px;
 }
 
 .homebutton {
@@ -116,4 +119,18 @@
         font-size: 12px; /* Further reduce font size on very small screens */
         padding: 6px 12px; /* Adjust padding for very small screens */
     }
+}
+
+.site-blocks-cover {
+    position: relative; /* Positioning adjustments */
+    height: 100vh; /* Full viewport height */
+    display: flex;
+    align-items: center; /* Center content vertically */
+    justify-content: center; /* Center content horizontally */
+    color: #0056b3; 
+    background-image: url('../image/home/hero_1.jpg'); /* Replace with your background image */
+    background-size: cover; /* Cover the area */
+    background-position: center; /* Center the background */
+    text-align: center; /* Center text */
+    margin-bottom: 50px;
 }

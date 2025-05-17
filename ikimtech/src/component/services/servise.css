@@ -21,14 +21,18 @@
     margin-top: 20px;
     text-align: center;
 }
-
+.projectwork{
+    text-align: center;
+}
 .serviserap {
     display: flex;
-    flex-wrap: wrap; /* Allow wrapping for responsive behavior */
+    flex-wrap: wrap-reverse; 
     justify-content: center; /* Center align items */
     gap: 20px; /* Space between items */
 }
-
+.projectwrap{
+    display: flex;
+}
 .weblogo {
     display: flex; /* Use flex for alignment */
     justify-content: center; /* Center logo */
@@ -41,6 +45,7 @@
     background: linear-gradient(45deg, #ff6b6b, #f5af19);
     box-shadow: 0 4px 20px rgba(248, 244, 244, 0.2);
     animation: pulse 2s infinite; /* Animation */
+    margin-right: 80px;
 }
 
 .webtitle {
@@ -94,6 +99,9 @@
     .containers {
         padding: 15px; /* Adjust padding */
         width: 90%; /* Make boxes wider on smaller screens */
+    }
+    .projectwrap{
+        display: block;
     }
 
     .weblogoimage img {

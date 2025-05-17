@@ -1,0 +1,166 @@
+/* General Styles */
+.about {
+    margin-top: 90px;
+    align-items: center;
+    text-align: center; /* Center text */
+}
+
+.abuttitle {
+    font-size: 28px; /* Maintain original size */
+    font-weight: bold; /* Corrected font-weight */
+}
+
+.description {
+    text-align: center; /* Center description */
+}
+
+/* About Container */
+.aboutcontainer {
+    display: flex;
+    justify-content: center; /* Center items */
+    align-items: flex-start; /* Align items to the top */
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    background-color: #f0f0f0;
+    overflow: hidden;
+}
+
+/* Left and Right Sections */
+.left-section,
+.right-section {
+    width: calc(50% - 20px); /* Maintain width on medium and large devices */
+    height: auto; /* Allow height to adjust */
+    background-color: white; /* Background for left section */
+    border-radius: 10px; /* Rounded corners */
+    margin: 10px; /* Margin for spacing */
+    display: flex; /* Enable flexbox for card layout */
+    flex-direction: column; /* Stack cards vertically */
+}
+
+.left-section {
+    animation: slideInLeft 1s forwards;
+    display: flex;
+    justify-content: space-between;
+}
+
+.right-section {
+    background-image: url('../image/icon/logo.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    height: 300px; /* Fixed height */
+    margin: 0; /* Remove margin */
+    animation: slideInRight 1s forwards;
+}
+
+/* Card Styles */
+.firstcard {
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid #033D54;
+    border-radius: 10px;
+    width: 80%; /* Fixed width for cards */
+    height: 130px; /* Fixed height for cards */
+    margin: 20px auto; /* Center horizontally */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transitions */
+}
+
+.firstcard:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 4px 20px rgba(199, 191, 191, 0.5); /* Enhanced shadow */
+}
+
+.cardlogo img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-right: 12px; /* Space between image and text */
+}
+
+.carddescription h4 {
+    margin: 0; /* Remove default margin */
+}
+.first{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+/* Button Styles */
+.aboutbutton a {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #007bff; /* Primary button color */
+    color: white;
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+.aboutbutton a:hover {
+    background-color: #0056b3; /* Darker on hover */
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .abuttitle {
+        font-size: 24px; /* Slightly smaller title */
+    }
+
+    .left-section,
+    .right-section {
+        width: 100%; /* Full width on smaller screens */
+        margin: 10px 0; /* Adjust margin */
+        flex-direction: column; /* Stack sections vertically */
+    }
+
+    .firstcard {
+        width: 90%; /* Adjust card width for small screens */
+        height: auto; /* Allow height to adjust */
+    }
+}
+        .aboutbutton{
+            margin-top: 160px;
+        }
+.right-section{
+    height: 350px;
+    margin-top: 40px;
+}
+@media (max-width: 576px) {
+    .firstcard {
+        flex-direction: column; /* Stack image and text vertically */
+        align-items: center; /* Center items */
+        margin: 20px auto; /* Center and adjust margin */
+    }
+
+    .cardlogo img {
+        margin-bottom: 10px; /* Space below image */
+    }
+
+    .aboutbutton a {
+        width: 100%; /* Full width button */
+    }
+}
+
+/* Keyframes for Animation */
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

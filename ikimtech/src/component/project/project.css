@@ -1,0 +1,64 @@
+.site-section {
+  padding: 2.5em 0;
+}
+
+@media (min-width: 768px) {
+  .site-section {
+    padding: 5em 0;
+  }
+}
+
+.projectwrapper {
+  display: flex; /* Use flexbox for layout */
+  flex-wrap: wrap; /* Allow wrapping */
+  justify-content: space-between; /* Space between items */
+  margin: 0 -10px; /* Negative margin for spacing */
+}
+
+.projectcard {
+  margin: 10px; /* Space around each card */
+  flex: 1 1 calc(33.333% - 20px); /* Three cards per row with space */
+  max-width: calc(33.333% - 20px); /* Prevent overflow */
+  position: relative;
+}
+
+@media (max-width: 768px) {
+  .projectcard {
+    flex: 1 1 calc(50% - 20px); /* Two cards per row on medium screens */
+    max-width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .projectcard {
+    flex: 1 1 100%; /* One card per row on small screens */
+    max-width: 100%;
+  }
+}
+
+.media-1 {
+  position: relative;
+  overflow: hidden;
+}
+
+.media-1 img {
+  width: 100%; /* Ensure image fills the container */
+  transition: filter 0.3s ease;
+}
+
+.media-1-content {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.media-1:hover img {
+  filter: blur(2px);
+}
+
+.media-1:hover .media-1-content {
+  opacity: 1;
+}

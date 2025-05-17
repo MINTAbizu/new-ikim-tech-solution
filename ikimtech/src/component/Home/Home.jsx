@@ -21,7 +21,7 @@ function Home() {
     };
   }, []);
   return (
-    <div>
+    <div className='home'>
          <div className="site-blocks-cover overlay" data-aos="fade" data-stellar-background-ratio="0.5">
         <div className="container">
           <div className="row align-items-center justify-content-center text-center">
@@ -33,10 +33,10 @@ function Home() {
                 </div>
               </div>
             </div>
-             <div className="homebutton">
+             {/* <div className="homebutton">
                     <a data-fancybox className="btn btn-primary btn-md">Read More</a>
                     <a data-fancybox className="btn btn-primary btn-md">Get Started Today</a>
-                  </div>
+                  </div> */}
           </div>
           
         </div>
