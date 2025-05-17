@@ -20,35 +20,21 @@ body {
 .sidebar.active {
     right: 0; /* Slide in */
 }
-.header{
+
+.header {
     display: flex;
     justify-content: space-between;
     gap: 300px;
 }
-.menu-overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    /* left: 0; */
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.5);
-    z-index: 999;
-    opacity: 0;
-    transition: opacity 0.3s ease-in-out;
-}
 
-.menu-overlay.active {
-    display: block;
-    opacity: 1;
-}
-
-/* Header Styles */
+/* Updated Header Styles */
 header {
-    position: sticky; 
+    position: fixed; /* Change to fixed */
     top: 0; 
+    left: 0; /* Add left for full width */
+    width: 100%; /* Ensure full width */
     background-color: white;
-    z-index: 10; 
+    z-index: 1; 
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
     height: 80px; 
     display: flex; 
@@ -95,7 +81,12 @@ header {
     display: flex;
     justify-content: center; /* Center the logo horizontally */
 }
-
+.icon-menu span{
+    margin-left: 880px;
+}
+/* .container{
+    display: flex;
+} */
 .logoimage img {
     max-width: 100%; /* Ensure the logo scales with its container */
     height: auto; /* Maintain aspect ratio */
@@ -107,6 +98,9 @@ header {
     .logoimage img {
         max-height: 60px; /* Smaller height on mobile */
     }
+    .icon-menu span{
+    margin-left:0;
+}
 }
 
 @media (max-width: 480px) {

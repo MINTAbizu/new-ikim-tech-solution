@@ -1,0 +1,39 @@
+.footercontainer {
+    background-color: black;
+    color: white;
+    padding: 30px;
+}
+
+.rowfoter {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+}
+
+.footer-heading {
+    font-size: 1.5rem; /* Adjust heading size */
+}
+
+.footerbottm {
+    text-align: center;
+    margin-top: 50px; /* Reduced margin for better spacing */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .footercontainer {
+        padding: 20px; /* Reduce padding on smaller screens */
+    }
+
+    .rowfoter {
+        flex-direction: column; /* Stack columns vertically */
+    }
+
+    .col-md-3, .col-md-5 {
+        width: 100%; /* Full width on small screens */
+        margin-bottom: 20px; /* Space between stacked items */
+    }
+
+    .footer-heading {
+        font-size: 1.25rem; /* Smaller heading size on mobile */
+    }
+}

@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../About/about.css'; // Make sure to create a corresponding CSS file
 import '../about/about.css'
 import logoimage from '..//image/home/hero_1.jpg'
+import Teams from '../Teams/Teams';
 function About() {
+   const [showTeam, setShowTeam] = useState(false); 
+
+  const handleToggleTeam = () => {
+    setShowTeam((prev) => !prev); 
+  };
   return (
     <div className="about">
       <h1 className="abuttitle">Why Choose Us</h1>
@@ -61,11 +67,14 @@ function About() {
             and dedication to deliver exceptional results. <br />
             Here's why we stand out:
           </p>
-          <div className="aboutbutton">
-            <a href="#">
-             <h1>About-us</h1>
-            </a>
-          </div>
+           <div className='aboutbutton'>
+      <h1>About Us</h1>
+      <button onClick={handleToggleTeam}>
+        {showTeam ? 'Hide Team' : 'Show Team'}
+      </button>
+
+      {showTeam && <Teams />} {/* Conditionally render the Team component */}
+    </div>
         </div>
       </div>
     </div>

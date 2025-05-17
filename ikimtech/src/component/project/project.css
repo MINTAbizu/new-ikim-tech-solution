@@ -9,16 +9,16 @@
 }
 
 .projectwrapper {
-  display: flex; /* Use flexbox for layout */
-  flex-wrap: wrap; /* Allow wrapping */
-  justify-content: space-between; /* Space between items */
-  margin: 0 -10px; /* Negative margin for spacing */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: space-between; 
+  margin: 0 -10px; 
 }
 
 .projectcard {
-  margin: 10px; /* Space around each card */
-  flex: 1 1 calc(33.333% - 20px); /* Three cards per row with space */
-  max-width: calc(33.333% - 20px); /* Prevent overflow */
+  margin: 10px; 
+  flex: 1 1 calc(33.333% - 20px); 
+  max-width: calc(33.333% - 20px); 
   position: relative;
 }
 

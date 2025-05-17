@@ -1,0 +1,45 @@
+.team-section {
+    position: relative; /* Ensure it can be layered above others */
+    z-index: 10; /* Higher than the background */
+    background-color: white; /* Set a background color */
+    padding: 20px; /* Add padding for better spacing */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.teammemeber {
+    border: 2px solid #033D54;
+    border-radius: 8px;
+    margin: 20px; /* Uniform margin for all sides */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth hover effect */
+}
+
+.teammemeber:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 20px rgba(241, 237, 237, 0.5);
+}
+
+.memberimg img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    z-index: 1; /* Ensure image stays above */
+}
+
+.socialmedia{
+    display: flex;
+    justify-content: space-between;
+}
+.teamflex {
+    display: flex;
+    /* flex-wrap: wrap; Allow wrapping on smaller screens */
+    justify-content: space-between; /* Space between items */
+    margin-top: -50px;
+    height: 450px;
+    width: 680px;
+    gap: 10px;
+    z-index: 1;
+    /* margin-right: -300px; */
+}
+.lastteam{
+    margin-right:200px;
+}

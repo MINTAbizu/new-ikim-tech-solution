@@ -52,6 +52,7 @@
     height: 300px; /* Fixed height */
     margin: 0; /* Remove margin */
     animation: slideInRight 1s forwards;
+    
 }
 
 /* Card Styles */
