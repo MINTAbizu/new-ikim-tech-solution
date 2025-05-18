@@ -8,6 +8,7 @@ import Serviserapw from "./component/services/Serviserapw";
 import Teams from "./component/Teams/Teams";
 import HomeContact from "./component/HomeContact ";
 import Footer from "./component/footer.jsx/footer";
+import Project from "./component/project/Project";
 
 function App() {
   return (
@@ -17,9 +18,10 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeContact />} /> {/* Default route */}
           <Route path="/about" element={<About />} />
+           <Route path="/Project" element={<Project />} />
           <Route path="/service" element={<Serviserapw />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/teams" element={<Teams />} />
+          <Route path="/Teams" element={<Teams />} />
         </Routes>
         <Footer/>
       </div>

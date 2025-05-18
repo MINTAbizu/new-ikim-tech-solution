@@ -3,6 +3,8 @@
     margin-top: 90px;
     align-items: center;
     text-align: center; /* Center text */
+    height: 1900px;
+
 }
 
 .abuttitle {
@@ -14,17 +16,66 @@
     text-align: center; /* Center description */
 }
 
+
+
+
+.right-section {
+    background-image: url('../image/home/hero_1.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+   /* margin-left: -10px; */
+   padding: 0;
+   height: 300px;
+   margin-top: -10px;
+   margin-right: 10px;
+}
+.right-section p{
+    color: white;
+    text-align: center;
+    padding-top: 14px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* About Container */
 .aboutcontainer {
     display: flex;
-    justify-content: center; /* Center items */
+    justify-content: space-between; /* Center items */
     align-items: flex-start; /* Align items to the top */
     height: 100vh; /* Full viewport height */
     margin: 0;
-    background-color: #f0f0f0;
+    background-color: hwb(0 96% 3%);
     overflow: hidden;
+     height: 50%;
 }
-
+.aboutbutton{
+    margin-right: 200px;
+}
 /* Left and Right Sections */
 .left-section,
 .right-section {
@@ -40,7 +91,8 @@
 .left-section {
     animation: slideInLeft 1s forwards;
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    margin-right: 120px;
 }
 
 .right-section {
@@ -76,11 +128,13 @@
     width: 70px;
     height: 70px;
     border-radius: 50%;
-    margin-right: 12px; /* Space between image and text */
+    margin-right: 12px;
+    margin: 30px; /* Space between image and text */
 }
 
 .carddescription h4 {
-    margin: 0; /* Remove default margin */
+    margin: 20px; 
+    text-align: center;
 }
 .first{
     display: flex;
@@ -107,7 +161,10 @@
     .abuttitle {
         font-size: 24px; /* Slightly smaller title */
     }
-
+     .aboutcontainer{
+        display: flex;
+        flex-wrap:wrap;
+     }
     .left-section,
     .right-section {
         width: 100%; /* Full width on smaller screens */
@@ -120,9 +177,9 @@
         height: auto; /* Allow height to adjust */
     }
 }
-        .aboutbutton{
+        /* .aboutbutton{
             margin-top: 160px;
-        }
+        } */
 .right-section{
     height: 350px;
     margin-top: 40px;

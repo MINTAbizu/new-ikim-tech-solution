@@ -7,11 +7,11 @@ function Footer() {
         <div className="row rowfoter">
           <div className="col-md-9">
             <div className="row">
-              <div className="col-md-5">
+              <div className="col-md-6">
                 <h2 className="footer-heading mb-4">About Us</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque facere laudantium magnam voluptatum autem. Amet aliquid nesciunt veritatis aliquam.</p>
               </div>
-              <div className="col-md-3 ml-auto">
+              <div className="col-md-6 ml-auto">
                 <h2 className="footer-heading mb-4">Features</h2>
                 <ul className="list-unstyled">
                   <li><a href="#">About Us</a></li>
@@ -21,11 +21,13 @@ function Footer() {
                 </ul>
               </div>
               <div className="col-md-3">
-                <h2 className="footer-heading mb-4">Follow Us</h2>
-                <a href="#" className="pl-0 pr-3"><span className="icon-facebook"></span></a>
+                {/* <h2 className="footer-heading mb-4">Follow Us</h2> */}
+                <ul>
+                  <a href="#" className="pl-0 pr-3"><span className="icon-facebook"></span></a>
                 <a href="#" className="pl-3 pr-3"><span className="icon-twitter"></span></a>
                 <a href="#" className="pl-3 pr-3"><span className="icon-instagram"></span></a>
                 <a href="#" className="pl-3 pr-3"><span className="icon-linkedin"></span></a>
+                </ul>
               </div>
             </div>
           </div>

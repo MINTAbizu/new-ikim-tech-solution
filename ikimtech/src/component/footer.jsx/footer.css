@@ -2,11 +2,16 @@
     background-color: black;
     color: white;
     padding: 30px;
+    height: 420px;
+    margin-top: 350px;
 }
-
+.col-md-3 ul{
+    display: flex;
+    justify-content: space-between;
+}
 .rowfoter {
     display: flex;
-    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    justify-content: space-between;/* Allow items to wrap on smaller screens */
 }
 
 .footer-heading {

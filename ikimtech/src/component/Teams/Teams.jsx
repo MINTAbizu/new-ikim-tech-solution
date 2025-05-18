@@ -13,8 +13,9 @@ function Teams() {
             
           </div>
         </div>
-        <div class="row teamflex">
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="100">
+        <div class="row teamflex container">
+         <div className="firstteam row">
+           <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="100">
             <div class="person text-center">
                  <div class="memberimg">
                  <img src={team} alt="Image" class="img-fluid rounded-circle w-50 mb-5"/>
@@ -22,17 +23,17 @@ function Teams() {
                 </div>
               <h3>Mintsenot</h3>
               <p class="position text-muted">Co-Founder, President</p>
-                {/* <ul class="socialmedia">
-                <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="#" class="p-2"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="#" class="p-2"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" class="p-2"><i class="fab fa-linkedin"></i></a></li>
-            </ul> */}
+                <ul class="socialmedia">
+                {/* <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li> */}
+                <li><a href="#" class="p-2"><i className="fab fa-twitter"></i></a></li>
+                <li><a href="#" class="p-2"><i className="fab fa-instagram"></i></a></li>
+                <li><a href="#" class="p-2"><i className="fab fa-linkedin"></i></a></li>
+            </ul>
             </div>
             
             
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="200">
+          <div class="col-md-6 col-lg-6 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="200">
             <div class="person text-center">
                  <div class="memberimg">
                  <img src={team} alt="Image" class="img-fluid rounded-circle w-50 mb-5"/>
@@ -40,46 +41,52 @@ function Teams() {
                 </div>
               <h3>Mintsenot</h3>
               <p class="position text-muted">Co-Founder, COO</p>
-                {/* <ul class="social-media">
-                <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li>
+                <ul class="social-media">
+                {/* <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li> */}
                 <li><a href="#" class="p-2"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-linkedin"></i></a></li>
-            </ul> */}
+            </ul>
             </div>
           </div>
-          <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 teammemeber " data-aos="fade" data-aos-delay="300">
+         </div>
+
+          <div className="firstteam row">
+           <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="100">
             <div class="person text-center">
-                <div class="memberimg">
+                 <div class="memberimg">
                  <img src={team} alt="Image" class="img-fluid rounded-circle w-50 mb-5"/>
 
                 </div>
               <h3>Mintsenot</h3>
-              <p class="position text-muted">Marketing</p>
-                {/* <ul class="social-media">
-                <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li>
+              <p class="position text-muted">Co-Founder, President</p>
+                <ul class="socialmedia">
+                {/* <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li> */}
                 <li><a href="#" class="p-2"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-instagram"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-linkedin"></i></a></li>
-            </ul> */}
+            </ul>
             </div>
+            
+            
           </div>
-           <div class="col-md-6 col-lg-3 mb-5 mb-lg-0 teammemeber lastteam" data-aos="fade" data-aos-delay="300">
+          <div class="col-md-6 col-lg-4 mb-5 mb-lg-0 teammemeber" data-aos="fade" data-aos-delay="200">
             <div class="person text-center">
-                <div class="memberimg">
+                 <div class="memberimg">
                  <img src={team} alt="Image" class="img-fluid rounded-circle w-50 mb-5"/>
 
                 </div>
               <h3>Mintsenot</h3>
-              <p class="position text-muted">Marketing</p>
-                {/* <ul class="social-media">
+              <p class="position text-muted">Co-Founder, COO</p>
+                <ul class="social-media">
                 <li><a href="#" class="p-2"><i class="fab fa-facebook-f"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-twitter"></i></a></li>
                 <li><a href="#" class="p-2"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="#" class="p-2"><i class="fab fa-linkedin"></i></a></li>
-            </ul> */}
+                {/* <li><a href="#" class="p-2"><i class="fab fa-linkedin"></i></a></li> */}
+            </ul>
             </div>
           </div>
+         </div>
         </div>
       </div>
     </div>

@@ -37,7 +37,15 @@
     display: flex; /* Use flex for alignment */
     justify-content: center; /* Center logo */
 }
-
+h2{
+    font-family: sans-serif;
+    font-size: 38px;
+    font-weight: bold;
+}
+p{
+    font-size: 18px;
+    font-weight: bold;
+}
 .weblogoimage img {
     width: 100px; /* Fixed logo size */
     height: 100px; /* Maintain aspect ratio */
