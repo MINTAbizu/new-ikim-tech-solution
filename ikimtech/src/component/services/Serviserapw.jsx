@@ -24,11 +24,11 @@ function Serviserapw() {
    <Services logo={logo} title={' 3D Designing '} descrption={'Offers innovative solutions for creating detailed three-dimensional models and visualizations. Whether for product design, architectural visualization, or animation.Ensures that your website is accessible to users, allowing businesses and individuals to establish their online presence easily.'}/>
       </div>
 
-     <div className="projectwrap">
+     {/* <div className="projectwrap">
        <Project image={logo} title={'web devlopment'}/>
        <Project image={logo} title={'web devlopment'}/>
         <Project image={logo} title={'web devlopment'}/>
-     </div>
+     </div> */}
       <div className="projectwrap">
        <Project image={logo} title={'web devlopment'}/>
        <Project image={logo} title={'web devlopment'}/>
