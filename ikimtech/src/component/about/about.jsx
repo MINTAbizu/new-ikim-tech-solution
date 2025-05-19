@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './about.css';
-import logoimage from '../image/home/hero_1.jpg';
 import Teams from '../Teams/Teams';
 import { Link } from 'react-router-dom';
 
@@ -27,7 +26,7 @@ function About() {
                    <div className="first">
                        <div className="firstcard">
                            <div className="cardlogo">
-                               <img src={logoimage} alt="Quality Services" />
+                               {/* Temporarily remove image */}
                            </div>
                            <div className="carddescription">
                                <h4>Quality Services</h4>
@@ -35,7 +34,7 @@ function About() {
                        </div>
                        <div className="firstcard">
                            <div className="cardlogo">
-                               <img src={logoimage} alt="Creative Designers" />
+                               {/* Temporarily remove image */}
                            </div>
                            <div className="carddescription">
                                <h4>Creative Designers</h4>
@@ -46,7 +45,7 @@ function About() {
                    <div className="second">
                        <div className="firstcard">
                            <div className="cardlogo">
-                               <img src={logoimage} alt="Quality Services" />
+                               {/* Temporarily remove image */}
                            </div>
                            <div className="carddescription">
                                <h4>Customer Support</h4>
@@ -54,7 +53,7 @@ function About() {
                        </div>
                        <div className="firstcard">
                            <div className="cardlogo">
-                               <img src={logoimage} alt="Creative Designers" />
+                               {/* Temporarily remove image */}
                            </div>
                            <div className="carddescription">
                                <h4>Free Consultation</h4>
