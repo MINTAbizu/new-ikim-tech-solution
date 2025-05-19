@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-// import About from "./component/about/About";
+import About from "./component/about/About";
 import Contact from "./component/Contact/Contact";
 import Header from "./component/header/Header";
 import Home from "./component/Home/Home";
@@ -18,7 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route path="/" element={<HomeContact />} /> {/* Default route */}
-          {/* <Route path="/about" element={<About />} /> */}
+          <Route path="/about" element={<About />} />
           <Route path="/Project" element={<Project />} />
           <Route path="/service" element={<Serviserapw />} />
           <Route path="/contact" element={<Contact />} />
