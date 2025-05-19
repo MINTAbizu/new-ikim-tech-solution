@@ -8,8 +8,8 @@ body {
     position: fixed;
     top: 0;
     right: -250px; /* Hidden off-screen */
-    width: 250px; /* Width of the sidebar */
-    height: 100%; /* Full height */
+    width: 210px; /* Width of the sidebar */
+    height: 300px; /* Full height */
     background-color: white;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
     transition: right 0.3s ease;
@@ -25,8 +25,20 @@ body {
     display: flex;
     justify-content: space-between;
     gap: 300px;
+    
 }
-
+ li {
+    gap: 40px;
+    margin-top: 30px;
+    font-size: 18px;
+    list-style: none;
+    text-decoration: none;
+}
+li a{
+    text-decoration: none;
+    color:black;
+    cursor: pointer;
+}
 /* Updated Header Styles */
 header {
     position: fixed; /* Change to fixed */

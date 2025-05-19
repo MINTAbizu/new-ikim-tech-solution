@@ -2,10 +2,10 @@
     border: 5px solid #033D54;
     color: #033D54;
     border-radius: 10px;
-    width: 100%; /* Full width for responsiveness */
+    width: 50%; /* Full width for responsiveness */
     max-width: 300px; /* Maximum width for larger screens */
     margin: 20px auto; /* Center align with auto margins */
-    height: 140px; /* Allow height to adjust based on content */
+    height: 100%; /* Allow height to adjust based on content */
     background-color: white;
     padding: 20px; /* Add padding for better spacing */
     position: relative; /* Position relative for inner elements */
