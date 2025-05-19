@@ -2,7 +2,7 @@ import React from 'react'
 import Home from './Home/Home'
 
 import Project from './project/Project'
-import About from './about/About'
+// import About from './about/About'
 import Contact from './Contact/Contact'
 import Serviserapw from './services/Serviserapw'
 
@@ -12,7 +12,7 @@ function HomeContact() {
       <Home/>
       <Serviserapw/>
       <Project/>
-      <About/>
+      {/* <About/> */}
       <Contact/>
     </div>
   )
