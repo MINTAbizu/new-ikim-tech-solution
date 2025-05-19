@@ -11,6 +11,7 @@
     position: relative; /* Position relative for inner elements */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s ease; /* Smooth hover effect */
+    margin-right: 50px;
 }
 
 .containers:hover {
@@ -26,12 +27,14 @@
 }
 .serviserap {
     display: flex;
+    margin-right: 50px;
     flex-wrap: wrap-reverse; 
     justify-content: center; /* Center align items */
     gap: 20px; /* Space between items */
 }
 .projectwrap{
     display: flex;
+    
 }
 .weblogo {
     display: flex; /* Use flex for alignment */
