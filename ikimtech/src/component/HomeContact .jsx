@@ -5,6 +5,7 @@ import Project from './project/Project'
 // import About from './about/About'
 import Contact from './Contact/Contact'
 import Serviserapw from './services/Serviserapw'
+import About from './about/about'
 
 function HomeContact() {
   return (
@@ -12,7 +13,7 @@ function HomeContact() {
       <Home/>
       <Serviserapw/>
       <Project/>
-      {/* <About/> */}
+      <About/>
       <Contact/>
     </div>
   )
