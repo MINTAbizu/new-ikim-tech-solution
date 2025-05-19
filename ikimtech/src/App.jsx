@@ -9,6 +9,7 @@ import Teams from "./component/Teams/Teams";
 import HomeContact from "./component/HomeContact ";
 import Footer from "./component/footer/Footer";
 import Project from "./component/project/Project";
+import './about.css';
 
 function App() {
   return (

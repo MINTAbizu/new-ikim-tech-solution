@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import '../About/about.css'; // Ensure correct CSS path
+import './about.css'; // Fixed CSS path
 import logoimage from '..//image/home/hero_1.jpg';
 import Teams from '../Teams/Teams';
 import { Link } from 'react-router-dom';
