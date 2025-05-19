@@ -7,7 +7,7 @@ import Home from "./component/Home/Home";
 import Serviserapw from "./component/services/Serviserapw";
 import Teams from "./component/Teams/Teams";
 import HomeContact from "./component/HomeContact ";
-import Footer from "./component/footer.jsx/Footer";
+import Footer from "./component/footer/Footer";
 import Project from "./component/project/Project";
 
 function App() {
