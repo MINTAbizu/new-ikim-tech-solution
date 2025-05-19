@@ -9,13 +9,16 @@ import Teams from "./component/Teams/Teams";
 import HomeContact from "./component/HomeContact ";
 import Footer from "./component/footer/Footer";
 import Project from "./component/project/Project";
+import ScrollProgress from "./component/ScrollProgress";
 import './App.css';
-import About from "./component/about/about";
+import About from "./component/about/About";
+// import About from "./component/about/about";
 
 function App() {
   return (
     <Router>
       <div>
+        <ScrollProgress />
         <Header />
         <Routes>
           <Route path="/" element={<HomeContact />} /> {/* Default route */}

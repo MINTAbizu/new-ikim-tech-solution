@@ -1,20 +1,29 @@
 import React from 'react'
 import Home from './Home/Home'
-
 import Project from './project/Project'
-// import About from './about/About'
+import About from './about/About'
 import Contact from './Contact/Contact'
 import Serviserapw from './services/Serviserapw'
-import About from './about/about'
+import ScrollAnimation from './ScrollAnimation'
 
 function HomeContact() {
   return (
     <div>
-      <Home/>
-      <Serviserapw/>
-      <Project/>
-      <About/>
-      <Contact/>
+      <ScrollAnimation>
+        <Home/>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Serviserapw/>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Project/>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <About/>
+      </ScrollAnimation>
+      <ScrollAnimation>
+        <Contact/>
+      </ScrollAnimation>
     </div>
   )
 }
