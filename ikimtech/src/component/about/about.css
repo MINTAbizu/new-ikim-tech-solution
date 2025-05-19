@@ -164,14 +164,18 @@
      .aboutcontainer{
         display: flex;
         flex-wrap:wrap;
+        margin-top: 120px;
      }
     .left-section,
     .right-section {
         width: 100%; /* Full width on smaller screens */
         margin: 10px 0; /* Adjust margin */
         flex-direction: column; /* Stack sections vertically */
+        /* margin-top: 50px; */
     }
-
+.abuttitle{
+    margin-top: 250px;
+}
     .firstcard {
         width: 90%; /* Adjust card width for small screens */
         height: auto; /* Allow height to adjust */
@@ -182,13 +186,15 @@
         } */
 .right-section{
     height: 350px;
-    margin-top: 40px;
+    /* margin-top: 40px;
+    margin-top: 30px; */
 }
 @media (max-width: 576px) {
     .firstcard {
         flex-direction: column; /* Stack image and text vertically */
         align-items: center; /* Center items */
         margin: 20px auto; /* Center and adjust margin */
+        /* margin-top: 40px; */
     }
 
     .cardlogo img {

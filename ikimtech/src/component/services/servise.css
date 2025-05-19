@@ -2,32 +2,84 @@
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 2rem;
+    padding: var(--spacing-unit);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: calc(var(--spacing-unit) * 2);
+    justify-content: space-between;
+    align-items: stretch;
 }
 
 .service-box {
-    background: #fff;
-    border-radius: 10px;
+    flex: 1 1 300px;
+    max-width: calc(33.333% - var(--spacing-unit));
+    background: var(--background-color);
+    border-radius: var(--border-radius);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 2rem;
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease;
+    padding: calc(var(--spacing-unit) * 1.5);
+    transition: all var(--transition-speed) ease;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .service-box:hover {
     transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+}
+.serviserap{
+    display: flex;
+    justify-content: space-between;
+text-align: center;
+    margin: 20px;
+    gap: 20px;
+    width: 98%;
+    height: 320px;
+    /* margin-right: 140px; */
+}
+
+.projectwrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: calc(var(--spacing-unit) * 2);
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--spacing-unit);
+}
+
+.projectcard {
+    flex: 1 1 300px;
+    max-width: calc(33.333% - var(--spacing-unit));
+    background: var(--background-color);
+    border-radius: var(--border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all var(--transition-speed) ease;
+    overflow: hidden;
+    margin-top: 200px;
+}
+
+.projectcard img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.media-1-content {
+    padding: var(--spacing-unit);
+    text-align: center;
 }
 
 .service-content {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: var(--spacing-unit);
 }
 
 .service-header {
     display: flex;
     align-items: center;
-    gap: 1.5rem;
+    gap: var(--spacing-unit);
 }
 
 .service-logo {
@@ -36,6 +88,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    background: rgba(3, 61, 84, 0.1);
+    border-radius: 50%;
+    padding: var(--spacing-unit);
+    transition: transform var(--transition-speed) ease;
+}
+
+.service-box:hover .service-logo {
+    transform: scale(1.1);
 }
 
 .service-logo img {
@@ -45,49 +105,111 @@
 }
 
 .service-title h2 {
-    color: #333;
+    color: var(--primary-color);
     font-size: 1.5rem;
     margin: 0;
+    font-weight: 600;
 }
 
 .service-description p {
-    color: #666;
+    color: var(--text-color);
     line-height: 1.6;
     margin: 0;
+    opacity: 0.9;
+}
+.service-description{
+    padding: 30px;
 }
 
 /* Responsive Design */
+@media (max-width: 992px) {
+    .services-container {
+        gap: var(--spacing-unit);
+    }
+    .serviserap{
+    display: flex;
+     flex-wrap: wrap;
+text-align: center;
+    margin: 20px;
+    gap: 20px;
+    width: 100%;
+    height: 450px;
+    margin-top: 100px;
+    margin-bottom: 130px;
+    padding: 20px;
+   
+}
+.projectwrap {
+    gap: var(--spacing-unit);
+}
+
+.projectcard {
+    flex: 1 1 calc(50% - var(--spacing-unit));
+    max-width: calc(50% - var(--spacing-unit));
+}
+
+.service-description{
+    text-align: center;
+    padding-right: 15px;
+     padding-left: 15px;
+      padding-bottom: 15px;
+}
+}
+
 @media (max-width: 768px) {
     .services-container {
-        padding: 1rem;
+        padding: calc(var(--spacing-unit) * 0.5);
+        position: relative;
     }
 
     .service-box {
-        padding: 1.5rem;
+        flex: 1 1 100%;
+        max-width: 100%;
     }
 
     .service-header {
         flex-direction: column;
         text-align: center;
-        gap: 1rem;
+        gap: calc(var(--spacing-unit) * 0.5);
     }
+    .service-description{
+    text-align: center;
+    padding-right: 15px;
+     padding-left: 15px;
+      padding-bottom: 15px;
+}
 
     .service-logo {
         width: 60px;
         height: 60px;
     }
+
+    .service-title h2 {
+        font-size: 1.25rem;
+    }
 }
 
 @media (max-width: 480px) {
     .services-container {
-        padding: 0.5rem;
+        padding: calc(var(--spacing-unit) * 0.5);
     }
 
     .service-box {
-        padding: 1rem;
+        padding: calc(var(--spacing-unit) * 0.75);
     }
 
     .service-title h2 {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
+    }
+
+    .service-description p {
+        font-size: 0.9rem;
+    }
+    .projectwrap {
+        padding: calc(var(--spacing-unit) * 0.25);
+    }
+
+    .projectcard {
+        margin-bottom: var(--spacing-unit);
     }
 }

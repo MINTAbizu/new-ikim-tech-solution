@@ -13,13 +13,13 @@ function About() {
    return (
        <div className="about container">
            <h1 className="abuttitle">Why Choose Us</h1>
-           <div className="description">
+           {/* <div className="description">
                <p>
                    At IKIM Tech, we combine innovation, expertise,<br />
                    and dedication to deliver exceptional results. <br />
                    Here's why we stand out:
                </p>
-           </div>
+           </div> */}
 
            <div className="aboutcontainer row">
                <div className="left-section col-sm-12 col-lg-6">

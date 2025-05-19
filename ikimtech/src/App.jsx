@@ -12,8 +12,7 @@ import Project from "./component/project/Project";
 import ScrollProgress from "./component/ScrollProgress";
 import './App.css';
 import About from "./component/about/about";
-// import About from "./component/about/About";
-// import About from "./component/about/about";
+
 
 function App() {
   return (
@@ -28,8 +27,10 @@ function App() {
           <Route path="/service" element={<Serviserapw />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Teams" element={<Teams />} />
+
         </Routes>
         <Footer/>
+        {/* <Project/> */}
       </div>
     </Router>
   );
