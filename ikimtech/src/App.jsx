@@ -9,7 +9,7 @@ import Teams from "./component/Teams/Teams";
 import HomeContact from "./component/HomeContact ";
 import Footer from "./component/footer/Footer";
 import Project from "./component/project/Project";
-import './about.css';
+import './App.css';
 
 function App() {
   return (
@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route path="/" element={<HomeContact />} /> {/* Default route */}
           <Route path="/about" element={<About />} />
-           <Route path="/Project" element={<Project />} />
+          <Route path="/Project" element={<Project />} />
           <Route path="/service" element={<Serviserapw />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/Teams" element={<Teams />} />

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './about.css'; // Fixed CSS path
-import logoimage from '..//image/home/hero_1.jpg';
+import './about.css';
+import logoimage from '../image/home/hero_1.jpg';
 import Teams from '../Teams/Teams';
 import { Link } from 'react-router-dom';
 
