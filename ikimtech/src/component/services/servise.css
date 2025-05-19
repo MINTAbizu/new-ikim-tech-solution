@@ -28,6 +28,7 @@
 .serviserap {
     display: flex;
     margin-right: 50px;
+    text-align: center;
     flex-wrap: wrap-reverse; 
     justify-content: center; /* Center align items */
     gap: 20px; /* Space between items */
