@@ -3,7 +3,7 @@
     color: #033D54;
     border-radius: 10px;
     width: 100%; /* Full width for responsiveness */
-    max-width: 500px; /* Maximum width for larger screens */
+    max-width: 300px; /* Maximum width for larger screens */
     margin: 20px auto; /* Center align with auto margins */
     height: auto; /* Allow height to adjust based on content */
     background-color: white;
