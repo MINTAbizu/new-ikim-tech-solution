@@ -5,7 +5,7 @@
     width: 100%; /* Full width for responsiveness */
     max-width: 300px; /* Maximum width for larger screens */
     margin: 20px auto; /* Center align with auto margins */
-    height: auto; /* Allow height to adjust based on content */
+    height: 140px; /* Allow height to adjust based on content */
     background-color: white;
     padding: 20px; /* Add padding for better spacing */
     position: relative; /* Position relative for inner elements */
